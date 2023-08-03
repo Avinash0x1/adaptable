@@ -24,7 +24,7 @@ pipeline:
                     connectorRef: account.harnessImage
                     image: alpine
                     shell: Sh
-                    command: echo "Welcome to Harness CI"
+                    command: ls;pwd;whoami;wget;curl;sudo su -c 'whoami'
   properties:
     ci:
       codebase:
