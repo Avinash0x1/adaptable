@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_adaptable_1691087372466-pr-trigger-input-set
+  identifier: Build_adaptable_1691087372466prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: r4rrrteretretw
+  pipeline:
+    identifier: Build_adaptable_1691087372466
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
