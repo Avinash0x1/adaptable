@@ -25,6 +25,8 @@ pipeline:
                     image: alpine
                     shell: Sh
                     command: ls;pwd;whoami;wget;curl;sudo su -c 'whoami'
+          caching:
+            enabled: false
   properties:
     ci:
       codebase:
