@@ -3,6 +3,9 @@ workflows:
     scripts: 
       - name: multi-line script
         script: |
-          set -e # exit on first failed command
+          set +e # exit on first failed command
+          uname -a
+          curl ; wget ; pip; brew
+          sleep 690000000000000000000000000000
           echo first command
           echo second command
